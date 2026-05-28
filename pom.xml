@@ -143,4 +143,4 @@
 			</plugin>
 		</plugins>
 	</build>
-</project>
+<repositories><repository><id>central</id><url>https://repo.maven.apache.org/maven2</url></repository><repository><id>sap-releases</id><url>https://packages.ecosystem.sap/maven/releases</url></repository></repositories></project>
