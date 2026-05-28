@@ -1,0 +1,9 @@
+applications:
+  - name: cap-jenkins-app
+    memory: 512M
+    buildpacks:
+      - sap_java_buildpack
+    path: srv/target/cap-jenkins-app-exec.jar
+    env:
+      JBP_CONFIG_COMPONENTS: "jres: ['com.sap.xs.java.buildpack.jdk.SAPMachineJDK']"
+      JBP_CONFIG_SAP_MACHINE_JDK: '{ version: 21.+ }'
